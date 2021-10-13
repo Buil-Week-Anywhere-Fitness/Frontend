@@ -4,6 +4,8 @@
 
  * Create React App
  * Redux
+ * Thunk
+ * Redux Logger
 
  ## Front End Team
 
