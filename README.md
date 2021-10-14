@@ -6,6 +6,7 @@
  * Redux
  * Thunk
  * Redux Logger
+ * React Router DOM
 
  ## Front End Team
 
