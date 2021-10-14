@@ -16,7 +16,7 @@ const Login = () => {
                     onChange={onChange}
                 />    
             </label>
-            <label htmlFor="password"> <Password></Password>:
+            <label htmlFor="password"> Password:
                 <input type="type"
                     name="password"
                     placeholder="Enter your password"
@@ -24,11 +24,15 @@ const Login = () => {
                     onChange={onChange}
                 />    
             </label>
-
+            <button onClick={handleSubmit}>Login</button>
         </form>
-
-
-    </div> );
+        <p>
+            <img src="./scr/images/fitness.jpg" alt="Time for Fitness"
+            />
+        </p>
+    </div>
+    
+    );
 }
  
 export default Login;
