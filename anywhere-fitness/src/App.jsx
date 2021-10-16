@@ -1,5 +1,7 @@
 import React from 'react';
 import Login from './components/Login';
+import About from './components/About';
+
 
 function App() {
   return (
@@ -7,6 +9,9 @@ function App() {
         <nav>
           <h1>Anywhere Fitness</h1>
           <div className="navLinks">
+            <link to= "/about">
+              <button className="about-button">About</button>
+            </link>
             <link to= "/login">
               <button className="login-button">Login</button>
             </link>
@@ -14,7 +19,8 @@ function App() {
           </div>
         </nav>
         <div className="App">
-<Route path="/login" component={Login} />
+            <Route path="/about" component={About} />
+            <Route path="/login" component={Login} />
 
 
         </div>
