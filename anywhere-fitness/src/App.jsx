@@ -12,6 +12,9 @@ function App() {
             <link to= "/about">
               <button className="about-button">About</button>
             </link>
+            <link to= "/contact">
+              <button className="contact-button">Contact</button>
+            </link>
             <link to= "/login">
               <button className="login-button">Login</button>
             </link>
@@ -20,6 +23,7 @@ function App() {
         </nav>
         <div className="App">
             <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
             <Route path="/login" component={Login} />
 
 
