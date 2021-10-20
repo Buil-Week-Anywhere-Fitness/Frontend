@@ -1,1 +1,16 @@
-@import './assets/css/main.css'
+#App {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+footer {
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.app_header {
+    padding-top: 3em;
+}
