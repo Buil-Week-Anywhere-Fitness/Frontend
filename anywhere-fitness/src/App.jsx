@@ -9,12 +9,14 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Contact from "./components/Contact";
 import Logout from "./components/Logout";
-import { Header, Container, Divider } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
+import AppHeader from "./components/App-Header";
+import AppFooter from "./components/App-Footer";
 
 function App() {
   return (
     <div id="App">
-      <Header as="h1">Anywhere Fitness</Header>
+      <AppHeader />
       <Container textAlign="center">
         <Router>
           <Switch>
@@ -39,19 +41,7 @@ function App() {
           </Switch>
         </Router>
       </Container>
-      <footer>
-        <Divider></Divider>
-        <div>
-          Icons made by{" "}
-          <a href="https://www.freepik.com" title="Freepik">
-            Freepik
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-      </footer>
+      <AppFooter />
     </div>
   );
 }
