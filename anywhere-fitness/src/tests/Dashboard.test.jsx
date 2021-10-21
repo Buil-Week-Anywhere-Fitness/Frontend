@@ -7,3 +7,9 @@ test("Renders Dashboard component without errors", () => {
   const welcomeText = screen.getByText(/welcome back/i);
   expect(welcomeText).toBeInTheDocument();
 });
+
+test("Renders user icon", () => {
+  render(<Dashboard />);
+  const userIcon = screen.getByTestId(/user icon/i);
+  expect(userIcon).toBeInTheDocument();
+})
