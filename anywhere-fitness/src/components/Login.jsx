@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Login = () => {
+const Login = (props) => {
   const { login, values, change } = props;
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -16,7 +16,7 @@ const Login = () => {
 
   return ( 
   <div className="loginContainer">
-      <form action="login" onSubmit={}>
+      <form action="login" onSubmit={handleSubmit}>
           <h2>Login</h2>
           <label htmlFor="username"> Username:
               <input type="type"
