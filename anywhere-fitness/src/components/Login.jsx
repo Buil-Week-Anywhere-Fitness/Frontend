@@ -2,15 +2,15 @@ import React from "react";
 
 
 const Login = (props) => {
-  const { login, values, change } = props;
+//   const { login, values, change } = props;
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    login();
+    // login();
   };
 
   const onChange = (evt) => {
-    const { name, value } = evt.target;
-    change(name, value);
+    // const { name, value } = evt.target;
+    // change(name, value);
   };
 
 
@@ -22,7 +22,7 @@ const Login = (props) => {
               <input type="type"
                   name="username"
                   placeholder="Enter your username"
-                  value={values.username}
+                //   value={values.username}
                   onChange={onChange}
               />    
           </label>
@@ -30,7 +30,7 @@ const Login = (props) => {
               <input type="type"
                   name="password"
                   placeholder="Enter your password"
-                  value={values.password}
+                //   value={values.password}
                   onChange={onChange}
               />    
           </label>

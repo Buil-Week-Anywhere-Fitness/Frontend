@@ -15,35 +15,31 @@ import { Container } from "semantic-ui-react";
 import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
 
-const initialLoginValues = {
-  username: '',
-  password: '',
-};
-
+// const initialLoginValues = {
+//   username: "",
+//   password: "",
+// };
 
 function App() {
+  // const [inputs, setInputs] = useState(initialLoginValues);
+  // const [loginValues, setLoginValues] = useState(initialLoginValues);
 
-  const [inputs, setInputs] = useState(initialValues);
-  const [loginValues, setLoginValues] = useState(initialLoginValues);
+  // On change handler for the login values in Login.js
+  // const loginChange = (name, value) => {
+  //   setLoginValues({
+  //     ...loginValues,
+  //     [name]: value,
+  //   });
+  // };
 
-  
-// On change handler for the login values in Login.js
-const loginChange = (name, value) => {
-  setLoginValues({
-    ...loginValues,
-    [name]: value,
-  });
-};
-
-// Login function
-const onLogin = () => {
-  const user = {
-    username: loginValues.username,
-    password: loginValues.password,
-  };
-  loginUser(user);
-};
-
+  // Login function
+  // const onLogin = () => {
+  //   const user = {
+  //     username: loginValues.username,
+  //     password: loginValues.password,
+  //   };
+    // loginUser(user);
+  // };
 
   return (
     <div id="App">
@@ -55,8 +51,8 @@ const onLogin = () => {
               <Login />
             </Route>
             <Route path="/home">
-            <Home />
-          </Route>
+              <Home />
+            </Route>
             <Route path="/dashboard">
               {/* private route here */}
               <Dashboard />
