@@ -36,10 +36,10 @@ const Login = (props) => {
           </label>
           <button onClick={handleSubmit}>Log in</button>
       </form>
-      <p>
+      {/* <p>
           <img src="./scr/images/fitness.jpg" alt="Time for Fitness"
           />
-      </p>
+      </p> */}
   </div>
   
   );
