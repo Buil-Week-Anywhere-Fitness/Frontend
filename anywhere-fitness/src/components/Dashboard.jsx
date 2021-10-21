@@ -1,13 +1,16 @@
 import React from "react";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Icon } from "semantic-ui-react";
 
 // need to tell the difference between instructor and student for conditional rendering
 
 const Dashboard = () => {
-    const tempUserName = "Jimmy the Taco Man"
+  const tempUserName = "Jimmy the Taco Man";
   return (
     <Container>
-        <Header as="h2" >Welcome back, {tempUserName}!</Header>
+      <Header as="h2">
+        <Icon data-testid="user icon" name="user circle outline" size="huge" />
+        Welcome back, {tempUserName}!
+      </Header>
       {/* greet user */}
       {/* icon w/badge for "punch card" */}
       {/* instructor actions (view my classes, create class, edit class, remove class, logout), issue "punch" to a student for completing a class */}
