@@ -16,9 +16,9 @@ import AppFooter from "./components/App-Footer";
 function App() {
   return (
     <div id="App">
-      <AppHeader />
-      <Container textAlign="center">
-        <Router>
+      <Router>
+        <AppHeader />
+        <Container textAlign="center">
           <Switch>
             <Route path="/login">
               <Login />
@@ -39,9 +39,9 @@ function App() {
               <Redirect to="/login" />
             </Route>
           </Switch>
-        </Router>
-      </Container>
-      <AppFooter />
+        </Container>
+        <AppFooter />
+      </Router>
     </div>
   );
 }
