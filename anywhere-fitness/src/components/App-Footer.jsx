@@ -6,7 +6,6 @@ const AppFooter = () => {
     <footer>
       <Divider></Divider>
       <Container textAlign="center">
-        <br/>
         Icons made by{" "}
         <a href="https://www.freepik.com" title="Freepik">
           Freepik

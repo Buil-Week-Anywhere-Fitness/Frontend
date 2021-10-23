@@ -9,14 +9,16 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Contact from "./components/Contact";
 import Logout from "./components/Logout";
+import AppHeader from "./components/App-Header";
+import AppFooter from "./components/App-Footer";
 import { Header, Container, Divider } from "semantic-ui-react";
 
 function App() {
   return (
     <div id="App">
-      <Header as="h1">Anywhere Fitness</Header>
-      <Container textAlign="center">
-        <Router>
+      <Router>
+        <AppHeader />
+        <Container textAlign="center">
           <Switch>
             <Route path="/login">
               <Login />
@@ -37,21 +39,9 @@ function App() {
               <Redirect to="/login" />
             </Route>
           </Switch>
-        </Router>
-      </Container>
-      <footer>
-        <Divider></Divider>
-        <div>
-          Icons made by{" "}
-          <a href="https://www.freepik.com" title="Freepik">
-            Freepik
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            www.flaticon.com
-          </a>
-        </div>
-      </footer>
+        </Container>
+        <AppFooter />
+      </Router>
     </div>
   );
 }

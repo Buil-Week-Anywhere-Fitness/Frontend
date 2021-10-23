@@ -1,7 +1,15 @@
-import React from 'react';
+import React from "react";
+import { Container } from "semantic-ui-react";
+import ClassList from "./ClassList";
+
+// need to tell the difference between instructor and student for conditional rendering
 
 const Dashboard = () => {
-    return ( <div>Dashboard Component</div> );
-}
- 
+  return (
+    <Container fluid>
+      <ClassList />
+    </Container>
+  );
+};
+
 export default Dashboard;
