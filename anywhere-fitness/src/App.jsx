@@ -9,9 +9,9 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Contact from "./components/Contact";
 import Logout from "./components/Logout";
-import { Container } from "semantic-ui-react";
 import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
+import { Header, Container, Divider } from "semantic-ui-react";
 
 function App() {
   return (
