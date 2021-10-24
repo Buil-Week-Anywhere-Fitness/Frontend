@@ -1,17 +1,12 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
-import Login from "./components/Login";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Contact from "./components/Contact";
 import Logout from "./components/Logout";
 import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
-import { Container} from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -20,9 +15,6 @@ function App() {
         <AppHeader />
         <Container textAlign="center">
           <Switch>
-            <Route path="/login">
-              <Login />
-            </Route>
             <Route path="/dashboard">
               {/* private route here */}
               <Dashboard />
@@ -35,8 +27,7 @@ function App() {
               <Logout />
             </Route>
             <Route path="/">
-              {/* redirect to login if not authenticated, otherwise to dashboard */}
-              <Redirect to="/login" />
+              <Home />
             </Route>
           </Switch>
         </Container>
