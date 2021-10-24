@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <Container text>
-      <Tab panes={panes} />
+      <Tab data-testid="login tab" panes={panes} />
     </Container>
   );
 };
