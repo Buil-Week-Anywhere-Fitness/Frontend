@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 import Logout from "./components/Logout";
 import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
-import { Container } from "semantic-ui-react";
+import { Container} from "semantic-ui-react";
 
 function App() {
   return (
