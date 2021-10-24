@@ -7,6 +7,7 @@ import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
 import { Container } from "semantic-ui-react";
 import Home from "./components/Home";
+import EastereggGame from "./components/Game/EastereggGame";
 
 function App() {
   return (
@@ -26,8 +27,11 @@ function App() {
               {/* private route here, link should only show if logged in */}
               <Logout />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="*">
+              <EastereggGame/>
             </Route>
           </Switch>
         </Container>
