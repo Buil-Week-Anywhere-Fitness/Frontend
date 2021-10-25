@@ -4,12 +4,7 @@ import Dashboard from "../components/Dashboard";
 
 test("Renders Dashboard component without errors", () => {
   render(<Dashboard />);
-  const welcomeText = screen.getByText(/welcome back/i);
-  expect(welcomeText).toBeInTheDocument();
+  const dashboard = screen.getByTestId(/dashboard/i);
+  expect(dashboard).toBeInTheDocument();
 });
 
-test("Renders user icon", () => {
-  render(<Dashboard />);
-  const userIcon = screen.getByTestId(/user icon/i);
-  expect(userIcon).toBeInTheDocument();
-})
