@@ -8,6 +8,7 @@ import AppFooter from "./components/App-Footer";
 import { Container } from "semantic-ui-react";
 import Home from "./components/Home";
 import EastereggGame from "./components/Game/EastereggGame";
+import About from "./components/About";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <AppHeader />
         <Container textAlign="center">
           <Switch>
+            <Route path="/about" >
+              <About />
+            </Route>
             <Route path="/dashboard">
               {/* private route here */}
               <Dashboard />
