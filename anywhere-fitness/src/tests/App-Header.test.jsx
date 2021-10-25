@@ -1,14 +1,32 @@
 import React from "react";
-import { Router } from "react-router-dom";
 import { render, screen } from "@testing-library/react";
 import AppHeader from "../components/App-Header";
+import App from "../App";
 
-test("Renders user icon", () => {
+test("Renders AppHeader component", () => {
   render(
-    <Router>
+    <App>
       <AppHeader />
-    </Router>
+    </App>
+  );
+});
+
+test("Renders user icon in header", () => {
+  render(
+    <App>
+      <AppHeader />
+    </App>
   );
   const userIcon = screen.getByTestId(/user icon/i);
   expect(userIcon).toBeInTheDocument();
 });
+
+test("Renders four buttons to header", () => {
+  render(
+    <App>
+      <AppHeader />
+    </App>
+  );
+  const buttons = screen.getAllByRole("button");
+  expect(buttons).toHaveLength(4)
+})
