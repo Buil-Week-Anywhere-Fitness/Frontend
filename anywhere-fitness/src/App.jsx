@@ -6,6 +6,7 @@ import Logout from "./components/Logout";
 import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
 import { Container } from "semantic-ui-react";
+import ClassList from "./components/ClassList";
 import Home from "./components/Home";
 import EastereggGame from "./components/Game/EastereggGame";
 import About from "./components/About";
@@ -19,6 +20,9 @@ function App() {
           <Switch>
             <Route path="/about" >
               <About />
+            </Route>
+            <Route path="/classlist">
+              <ClassList />
             </Route>
             <Route path="/dashboard">
               {/* private route here */}
