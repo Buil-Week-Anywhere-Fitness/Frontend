@@ -16,7 +16,7 @@ test("renders App component without errors", () => {
 
 test("redirects to login if not authenticated", () => {
   render(<App />);
-  const loginText = screen.getByText(/login component/i);
+  const loginText = screen.getByText(/login/i);
   expect(loginText).toBeInTheDocument();
 });
 

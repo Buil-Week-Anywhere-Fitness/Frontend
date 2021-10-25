@@ -3,9 +3,10 @@
     margin: 0;
 }
 #game{
-    width: 700px;
+    width: 670px;
     height: 200px;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 #block{

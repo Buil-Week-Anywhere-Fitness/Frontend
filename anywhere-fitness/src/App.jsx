@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
-import Login from "./components/Login";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Contact from "./components/Contact";
 import Logout from "./components/Logout";
@@ -13,6 +7,9 @@ import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
 import { Container } from "semantic-ui-react";
 import ClassList from "./components/ClassList";
+import Home from "./components/Home";
+import EastereggGame from "./components/Game/EastereggGame";
+import About from "./components/About";
 
 function App() {
   return (
@@ -21,8 +18,8 @@ function App() {
         <AppHeader />
         <Container textAlign="center">
           <Switch>
-            <Route path="/login">
-              <Login />
+            <Route path="/about" >
+              <About />
             </Route>
             <Route path="/classlist">
               <ClassList />
@@ -38,9 +35,11 @@ function App() {
               {/* private route here, link should only show if logged in */}
               <Logout />
             </Route>
-            <Route path="/">
-              {/* redirect to login if not authenticated, otherwise to dashboard */}
-              <Redirect to="/login" />
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="*">
+              <EastereggGame/>
             </Route>
           </Switch>
         </Container>
