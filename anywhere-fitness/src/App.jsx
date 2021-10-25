@@ -12,6 +12,7 @@ import Logout from "./components/Logout";
 import AppHeader from "./components/App-Header";
 import AppFooter from "./components/App-Footer";
 import { Container } from "semantic-ui-react";
+import ClassList from "./components/ClassList";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Switch>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/classlist">
+              <ClassList />
             </Route>
             <Route path="/dashboard">
               {/* private route here */}
